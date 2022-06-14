@@ -1,0 +1,1 @@
+This line is used to test whether the action runs for a commit.
