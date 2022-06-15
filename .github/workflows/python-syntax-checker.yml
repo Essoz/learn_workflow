@@ -6,10 +6,11 @@ jobs:
   lint_python:
     runs-on: ubuntu-latest
     steps:
+      - run: git config --global user.email yuxuanj9@illinois.edu ; git config --global user.name yuxuan
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
         with:
           python-version: "3.8"
-      - run: pip install bandit black codespell flake8 isort mypy
+      - run: pip install codespell flake8 
       - run: codespell || true  # --ignore-words-list="" --skip=""
       - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
