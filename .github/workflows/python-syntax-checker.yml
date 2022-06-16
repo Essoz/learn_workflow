@@ -6,11 +6,10 @@ jobs:
   lint_python:
     runs-on: ubuntu-latest
     steps:
-      # - run: git config --global user.email yuxuanj9@illinois.edu ; git config --global user.name yuxuan
-      # - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         # with: 
-          # token: ${{ secrets.ACTION_SECRET }}
-      - run: ls acto
+        #   token: ${{ secrets.ACTION_SECRET }}
+      - run: ls
       - uses: actions/setup-python@v3
         with:
           python-version: "3.8"
