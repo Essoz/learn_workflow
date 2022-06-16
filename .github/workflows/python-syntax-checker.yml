@@ -16,6 +16,8 @@ jobs:
           python-version: "3.8"
       - name: Install Packages
         run: pip install codespell flake8 
+      - name: fuck
+        run: ls
       - name: Check Spelling
         run: codespell || true  
       - name: Check Syntax Error
