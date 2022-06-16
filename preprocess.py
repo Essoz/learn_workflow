@@ -26,6 +26,7 @@ def update_preload_images(context: dict):
             image = '%s:%s' % (items[0], items[1])
             context['preload_images'].add(image)
 
+        print("abc")
 
 def process_crd(context: dict,
                 apiclient: kubernetes.client.ApiClient,
