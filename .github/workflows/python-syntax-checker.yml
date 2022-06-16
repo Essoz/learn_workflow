@@ -7,9 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        # with: 
-        #   token: ${{ secrets.ACTION_SECRET }}
-      - run: ls
+      - run: ls acto
       - uses: actions/setup-python@v3
         with:
           python-version: "3.8"
